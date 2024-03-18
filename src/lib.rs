@@ -1,9 +1,18 @@
 use enumflags2::{BitFlag, BitFlags};
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct Flagged<T, F: BitFlag> {
     pub value: T,
     pub flags: BitFlags<F>,
+}
+
+impl<T: Default, F: BitFlag> Default for Flagged<T, F> {
+    fn default() -> Self {
+        Self {
+            value: Default::default(),
+            flags: Default::default(),
+        }
+    }
 }
 
 impl<T, F: BitFlag> Flagged<T, F> {
