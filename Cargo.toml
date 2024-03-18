@@ -1,5 +1,9 @@
 [package]
 name = "flagged"
+authors = ["Ozaner Hansha <ozanerhansha@gmail.com>"]
+description = "Bitflag-based warning type"
+repository = "https://github.com/ozaner/flagged"
+keywords = ["warning", "warnings", "bitflags", "enum", "flag"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
