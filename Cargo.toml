@@ -1,5 +1,6 @@
 [package]
 name = "flagged"
+version = "0.1.0"
 authors = ["Ozaner Hansha <ozanerhansha@gmail.com>"]
 description = "Bitflag-based warning type"
 repository = "https://github.com/ozaner/flagged"
